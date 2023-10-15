@@ -1,0 +1,216 @@
+/* * {
+    border: red 2px solid;
+} */
+
+body {
+    display: flex;
+    justify-content: center;
+    background-color: darkgray;
+}
+
+.header {
+    display: flex;
+    font-size: xx-large;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em 1em 0em;
+    text-decoration: underline;
+}
+
+.containertwo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerthree {
+    display: flex;
+    justify-content: center;
+}
+
+.dojoscontainer {
+    display: column;
+    width: 300px;
+    height: 400px;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    border: 2px solid black;
+    padding: 1em;
+    font-size: x-large;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5em;
+    flex-direction: column;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    box-shadow: 3px 3px black;
+    font-size: large;
+    margin: 1em;
+    border: black 2px solid;
+}
+
+.users {
+
+    display: flex;
+    width: 800px;
+    height: 400px;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: scroll;
+    border: 2px black solid;
+    background-color: rgb(63, 183, 91);
+    font-size: x-large;
+    
+}
+
+div p {
+    display: flex;
+    flex-direction: row;
+}
+
+.new_user {
+    font-weight: bold;
+}
+
+.hrefs {
+    display: flex;
+}
+
+/* .href {
+    display: flex;
+    width: 4em;
+    height: 1.5em;
+    border: black 2px solid;
+    background-color: green;
+    color: white;
+    box-shadow: 3px 3px black;
+    font-size: large;
+    margin: 1em;
+    text-decoration:none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+} */
+
+label {
+    font-size: x-large;
+    margin: 0em .5em 0em 0em;
+}
+
+form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+input {
+    display: flex;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    font-size: x-large;
+    height: 2em;
+}
+
+.href {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+}
+
+.column1, .column2 {
+    margin: 0em 8em 0em 8em;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.dojo_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dojo_mates {
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    border-top: 2px solid black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    padding: 100px;
+}
+
+.ninja_data {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+    margin: 0em 0em 0em 3em; 
+}
+
+.dojo_container_first, .dojo_container_last, .dojo_container_age {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: black 2px solid;
+    background-color: rgb(50, 48, 48);
+    color: orange;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4em 0em 0em 0em;
+}
+
+.href_home {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        flex-direction: column;
+        background-color: rgb(50, 48, 48);
+        color: orange;
+}
+
+
+.form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 3em 0em 0em 0em;
+}
+
+label {
+    display: flex; 
+    margin: 1em 0em 0em 0em;
+}
+
+select {
+    display: flex;
+    font-size: x-large;
+    width: 260px;
+}
+
+.ninja_button {
+    display: flex;
+    margin: 2em 0em 0em 0em;
+    width: 260px;
+    justify-content: center;
+    align-items: center;
+}
+

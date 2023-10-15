@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Success!</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Congratulations! You have been successfully added!</h1>
+        <h3>Here are your fellow dojo mates:</h3><br>
+        <div class="ninja_data">
+            <div class="dojo_container_first">
+                <h3>First Name:</h3>
+                {% for ninja in ninjas %}
+                    <div class="dojo_mates">{{ninja.first_name}}</div>
+                {% endfor %}
+            </div>
+            <div class="dojo_container_last">
+                <h3>Last Name:</h3>
+                {% for ninja in ninjas %}
+                    <div class="dojo_mates">{{ninja.last_name}}</div>
+                {% endfor %}
+            </div>
+            <div class="dojo_container_age">
+                <h3>Age:</h3>
+                {% for ninja in ninjas %}
+                    <div class="dojo_mates">{{ninja.age}}</div>
+                {% endfor %}
+            </div>
+        </div>
+        <a href="/" class="href">Return Home</a>
+    </div>
+</body>
+</html>

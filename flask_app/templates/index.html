@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    <title>Home</title>
+</head>
+<body>
+    <div class="column1">
+        <div class="containerone">
+            <h1 class="header">New Dojo:</h1>
+        </div>  
+        <div>
+            <form class="containerthree" action="/add/dojo" method="POST">
+                <label for="dojo_name">Name: </label>
+                <input type="text" name="name">
+                <input class="button" type="submit" value="New Dojo">
+            </form>
+        </div>
+    </div>  
+        <div class="column2">
+            <div class="containerone">
+                <h1 class="header">All Dojos:</h1>
+            </div>  
+            <div class="dojoscontainer">
+                {% for dojo in dojos|reverse %} 
+                <div>
+                    <a href="/dojo/{{dojo.id}}" class="href">{{dojo.name}}</a><br>
+                </div>
+                {% endfor %}
+            </div>
+            <div>
+                <form class="containerthree" action="/add/ninja" method="POST">
+                    <input class="button" type="submit" value="Add Ninja to Dojo">
+                </form>
+            </div>
+        </div>  
+    </div>
+</body>
+</html>
